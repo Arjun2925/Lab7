@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter City Name"
+        android:textSize="18sp"
+        android:paddingBottom="8dp" />
+
+    <!-- Input Field for City Name -->
+    <EditText
+        android:id="@+id/editTextCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="City Name"
+        android:minHeight="48dp"
+        android:inputType="text"
+        android:padding="8dp" />
+
+    <!-- Button to Get Weather Forecast -->
+    <Button
+        android:id="@+id/buttonGetForecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Forecast"
+        android:padding="8dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Weather Data Display Section -->
+    <TextView
+        android:id="@+id/textCurrentTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="Current Temp: "
+        android:textSize="16sp"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/textMaxTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="Max Temp: "
+        android:textSize="16sp"
+        android:paddingTop="4dp" />
+
+    <TextView
+        android:id="@+id/textMinTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="Min Temp: "
+        android:textSize="16sp"
+        android:paddingTop="4dp" />
+
+    <TextView
+        android:id="@+id/textHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="Humidity: "
+        android:textSize="16sp"
+        android:paddingTop="4dp" />
+
+    <!-- Weather Icon -->
+    <ImageView
+        android:id="@+id/imageWeatherIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="invisible"
+        android:layout_marginTop="8dp" />
+
+    <!-- Weather Description -->
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="Description: "
+        android:textSize="16sp"
+        android:paddingTop="4dp" />
+
+</LinearLayout>
